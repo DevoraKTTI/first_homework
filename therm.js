@@ -10,13 +10,16 @@ function converttempC(temp) {
     // makes the color of the fahrenheit display box blue for cold, gray for pleasant, and red for hot
     if (fahrenheit > 32 && fahrenheit < 80) {
         document.getElementById("fahrenheit-temp").style.backgroundColor = 'gray';
+        document.getElementById("degreeline").style.backgroundColor = 'light-gray';
     }
     else{
         if (fahrenheit <= 32) {
             document.getElementById("fahrenheit-temp").style.backgroundColor =  'steelblue';
+            document.getElementById("degreeline").style.backgroundColor =  'steelblue';
         }
         else {
             document.getElementById("fahrenheit-temp").style.backgroundColor = 'crimson';
+            document.getElementById("degreeline").style.backgroundColor = 'orange';
         }
     }   
     
