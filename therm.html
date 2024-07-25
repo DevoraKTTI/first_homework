@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8
+    ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- for css and javascript -->
+    <link rel="stylesheet" href="therm.css">
+    <script src="therm.js"></script>
+    <!-- for bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body class="body">    
+    <div>
+        <form id="temperatureForm">
+
+        <label class="text-center" for="temp">Fahrenheit</label>
+
+        <label margin="5000px" class="text-center" for="temp">Celsius</label>
+        
+      <br>
+        Fahrenheit: <input type="number" oninput="converttemp(this.value)">
+
+        Celsius: <input type="number" oninput="converttempC(this.value)  ">
+
+        
+        <!-- <input type="number" oninput="converttempC(this.value)"> -->
+      
+        <!-- prints celsius amount in a box on the right -->
+        <p class="box" id="celsius-temp">Celsius     </p>
+        <br>
+        <!-- prints fahrenheit amount in a box on the left -->
+        <p class="box  box1"  id="fahrenheit-temp">Fahrenheit    </p> 
+        <!-- draws thermometer on the screen -->
+        <div class="thermometer">
+            <ul>
+                <li class="number">----</li><br>
+                <li class="number">----</li><br>
+                <li class="number">----</li><br>
+                <li class="number">----</li><br>
+                <li class="number">----</li><br>
+                <li class="number">----</li><br>
+                <li class="number">----</li><br>
+                <li class="number">----</li><br>
+                <li class="number">----</li><br>
+                <li class="number">----</li><br>
+                <li class="number">----</li><br>
+                <li class="number">----</li><br>
+                <li class="number">----</li><br>
+                <li class="number">----</li><br>
+                <li class="number">----</li><br>
+                <li class="number">----</li><br>
+                <li class="number">----</li><br>
+                <li class="number">----</li><br>
+                <li class="number">----</li><br>
+                <li class="number">----</li><br>
+                <li class="number">----</li><br>
+                <li class="number">----</li><br>
+                <li class="number">----</li><br>
+                <li class="number">----</li><br>
+                <li class="number">----</li><br>
+                <li class="number">----</li><br>
+                <li class="number">----</li><br>
+                <li class="number">----</li><br>
+            </ul>
+            <!-- prints draws the degreeline in the thermometer -->
+            <div class="linetherm" id="degreeline"></div>
+         </div>
+    </form>
+    </div>
+</html>
+
+<!-- formula F to C : (32°F − 32) × 5/9  -->
+<!-- formula c to f : (32°F − 32) × 5/9  -->
+<!-- make an input box that gets two items, the type of temperature, and the temperature-->    <!-- only allow them to put numerics 0 through 200 into the box  -->
+<!-- do the calculation-->
+<!-- put image of thermometer on the screen -->
+<!-- make it show the temperature in both celsius and fahrenheit -->
+<!-- and put the line in up to the amount that the user inputed -->
+<!--make it blue or red depending on temp-->
+<!-- also put the number in C and F on the screen -->
